@@ -1,0 +1,501 @@
+/* **************Global Styling************** */
+
+@import url(//db.onlinewebfonts.com/c/fe2027c27b6a24505f548c6fd2e1076d?family=Berlin+Sans+FB);
+@import url(//db.onlinewebfonts.com/c/29dc27977e417a98e56556776f41607c?family=Corbel);
+@import url("http://fonts.cdnfonts.com/css/aakar");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+  background: url("./Images1/MAINBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #5e000a;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Navbar  */
+
+
+
+nav{
+  min-width: 100vw;
+}
+
+nav ul li a {
+  color: #430000 !important;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  margin-right: 2rem;
+  font-family: "Berlin Sans FB";
+}
+
+.navbar {
+  background: url("./Images1/Group.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.icons,
+.cart,
+.inr {
+  font-size: 2rem;
+  margin-right: 1rem;
+  border-right: 2px solid #430000;
+}
+
+.inr {
+  border: 0;
+}
+
+.icons span,
+.cart span,
+.inr span {
+  margin-right: 1rem;
+}
+
+.nav-item {
+  margin: auto 0;
+}
+
+.dropdown-toggle::after {
+  vertical-align: unset;
+}
+
+.dropdown-menu {
+  background: url("./Images1/previewBg.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.dropdown-menu.show {
+  top: 6rem;
+  display: flex;
+}
+
+.dropdown-menu a {
+  display: inline-block;
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Main Section */
+
+main {
+  margin-bottom: 4rem;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+
+
+.mycarousel div {
+  position: absolute;
+  bottom: 6vw;
+  right: 15vw;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+.mycarousel div h1 {
+  border: 2px solid #fff;
+  font-family: Impact, sans-serif;
+  padding: 1rem;
+  font-size: 3vw;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.mycarousel div h1:hover {
+  color: #430000;
+  background: #fff;
+}
+
+.mycarousel div h3 {
+  margin-bottom: 3rem;
+  font-family: "Corbel";
+  font-weight: 900;
+  font-size: 2.5vw;
+}
+
+/* ********NOSTALGIC section************** */
+
+.nostalgic {
+  /* margin-bottom: 4rem; */
+  padding-right: 2rem;
+  /* min-height: 100vh;   */
+}
+
+.left img {
+  height: 80%;
+}
+
+.right {
+  color: #430000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right > div {
+  width: 65%;
+}
+
+.right h1 {
+  letter-spacing: 2px;
+  /* font-size: 4rem; */
+  font-size: 3vw;
+  margin-bottom: 1rem;
+}
+
+.right p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.nostalgic .carousel-indicators li.active {
+  background-color: #430000;
+}
+
+/* ******FESTIVE SECTION *********** */
+
+.festive {
+  margin-bottom: 4rem;
+  /* min-height: 100vh; */
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.festive h1 {
+  letter-spacing: 2px;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #5e000a;
+  font-family: "Berlin Sans FB";
+}
+
+.festive p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #5e000a;
+  font-family: "Berlin Sans FB";
+}
+
+.festive .row div img {
+  width: 90%;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 2s linear;
+}
+
+.festive .row div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.festive .row div h3,
+.festive .row div p {
+  color: #5e000a;
+  font-family: "Berlin Sans FB";
+  letter-spacing: 5px;
+}
+
+.festive .row div:hover img {
+  transform: scale(1.1);
+}
+
+/* *********** Classic section**************** */
+
+.classic {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.classic-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.classic-div h1 {
+  font-size: 4vw;
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: "aakar", sans-serif;
+}
+
+.classic-div h1 span,
+.classic-div p span {
+  color: #5e000a;
+}
+
+.classic-div p {
+  font-size: 1.5vw;
+  color: #fff;
+  font-family: "Berlin Sans FB", sans-serif;
+}
+
+/* **********Diwali Section *********** */
+
+.diwali {
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.diwali-div {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  text-align: center;
+}
+
+.diwali .diwali-div h1 {
+  font-size: 3vw;
+  letter-spacing: 0.7rem;
+  font-family: Impact, sans-serif;
+  color: #fff;
+}
+
+.diwali-div h1:nth-child(3) {
+  background: #fff;
+  font-size: 4vw;
+  color: #5e000a;
+  letter-spacing: 1rem;
+}
+
+/* *********Contact Section ************ */
+
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url("./Images1/contact.png") no-repeat center center;
+  padding: 4rem 0rem;
+  font-family: "Berlin Sans FB";
+}
+
+.contact h1 {
+  letter-spacing: 5px;
+  font-size: 2.8rem;
+}
+
+.contact p {
+  font-size: 1.7rem;
+  font-family: "Berlin Sans FB";
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.input {
+  width: 50%;
+  position: relative;
+}
+
+.contact .input input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.contact .input input:focus {
+  outline: none;
+}
+
+.contact .input input::placeholder {
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.contact .input label,
+.contact .input label span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.icon span {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  margin-right: 0.4rem;
+  margin-top: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.icon span:hover {
+  background: #fff;
+  color: #000;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+.footer li {
+  margin-right: 1.2rem;
+}
+
+.footer li:hover a {
+  color: #430000;
+  text-decoration: none;
+}
+
+/* Media Query  */
+
+@media (max-width: 991px) {
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nostalgic {
+    margin-bottom: 4rem;
+  }
+  .navbar-brand {
+    margin-right: auto;
+  }
+  .navbar-toggler{
+    margin-right: 1.2rem;
+  }
+
+  .festive h1 , .festive p{
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 720px){
+  html{
+    font-size: 56%;
+  }
+  
+  .contact{
+    padding: 4rem 1rem ;
+  }
+}
+
+@media (max-width : 540px) {
+  .footer ul  {
+    flex-direction: column;
+  }
+  .contact .input{
+    width: 70%;
+  }
+  .diwali-div{
+    top: 50%;
+    left: 50%;
+  }
+  .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+  }
+  .mycarousel div h3 {
+    margin-bottom: 1rem;
+  }
+  .mycarousel div{
+    letter-spacing: 0.5rem;
+    bottom: 10vw;
+    right: 16vw;
+  }
+}
+
+@media (max-width :405px) {
+  nav{
+    flex-direction: column;
+  }
+  nav>div{
+    margin-right: auto;
+  }
+
+.festive .row div img{
+  width: 70%;
+}
+ 
+}
+
+.img-fluid{
+  object-fit: cover ;
+}
